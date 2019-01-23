@@ -1,3 +1,5 @@
+
+
 import java.awt.*;
 import javax.imageio.*;
 import javax.swing.*;
@@ -11,7 +13,7 @@ public class startGame extends JPanel {
     private BufferedImage image;
 
     public startGame() {
-        setSize(1000, 1000);
+        setSize(GlobalConstants.SCREEN_W, GlobalConstants.SCREEN_H);
         setBackground(Color.BLACK);
         setLayout(null);
         try {
