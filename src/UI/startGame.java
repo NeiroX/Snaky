@@ -31,8 +31,8 @@ public class startGame extends JPanel {
         setLayout(null);
         JLabel label = new JLabel();
         label.setText("Use these button for controle the snake");
-        label.setBounds(150, 150, GlobalConstants.SCREEN_W / 2, GlobalConstants.SCREEN_H / 2);
-        label.setFont(new Font("TimesRoman", Font.ITALIC, 20));
+        label.setBounds(150, 50, GlobalConstants.SCREEN_W / 2 + 100, GlobalConstants.SCREEN_H / 2 + 100);
+        label.setFont(new Font("TimesRoman", Font.ITALIC, 30));
         label.setForeground(Color.WHITE);
         add(label);
         time.schedule(new TimerTask() {
@@ -47,7 +47,7 @@ public class startGame extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(image, 150, 300, this);
+        g.drawImage(image, 250, 500, this);
     }
 
     public void changePanel(JFrame frame, Keyboard keyboard) {

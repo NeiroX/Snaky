@@ -13,7 +13,7 @@ public class Main {
 
         frame.addKeyListener(keyboard);
         frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
-        frame.setSize(Snaky.GlobalConstants.SCREEN_W, Snaky.GlobalConstants.SCREEN_H);
+        frame.setBounds(100, 100, Snaky.GlobalConstants.SCREEN_W, Snaky.GlobalConstants.SCREEN_H);
         frame.add(start);
         frame.setResizable(false);
         frame.setVisible(true);

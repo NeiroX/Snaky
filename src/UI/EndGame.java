@@ -22,23 +22,31 @@ public class EndGame extends JPanel {
         setSize(GlobalConstants.SCREEN_W, GlobalConstants.SCREEN_H);
         setBackground(Color.BLACK);
         setLayout(null);
+
         add(endButton);
         add(restartButton);
+
         scoreLabel.setBounds(GlobalConstants.SCREEN_W / 2 - 100, GlobalConstants.SCREEN_H - 110, 100, 100);
-        scoreLabel.setText(Integer.toString(GlobalConstants.recordNow));
-        recordLabel.setBounds(200, 100, 100, 100);
+        scoreLabel.setText("SCORE: " + GlobalConstants.recordNow);
+        scoreLabel.setForeground(Color.WHITE);
+
+        recordLabel.setForeground(Color.WHITE);
+        recordLabel.setBounds(500, GlobalConstants.SCREEN_H - 110, 100, 100);
         if (GlobalConstants.recordNow <= GlobalConstants.recordMax) {
-            recordLabel.setText(Integer.toString(GlobalConstants.recordMax));
+            recordLabel.setText("RECORD: " + GlobalConstants.recordMax);
         } else {
             recordLabel.setText(Integer.toString(GlobalConstants.recordNow));
             GlobalConstants.recordMax = GlobalConstants.recordNow;
         }
         add(recordLabel);
         add(scoreLabel);
+
         endButton.setBounds(GlobalConstants.SCREEN_W / 2 - 100, 100, 100, 100);
         endButton.setText("Exit");
+
         restartButton.setText("Restart");
-        restartButton.setBounds(300, 500, 100, 100);
+        restartButton.setBounds(300, 600, 100, 100);
+
         endButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -64,7 +72,7 @@ public class EndGame extends JPanel {
         super.paintComponent(g);
         g.setColor(Color.white);
         g.setFont(new Font("TimesRoman", Font.BOLD, 100));
-        g.drawString("Game over", 0, 300);
+        g.drawString("Game over", 150, 400);
     }
 
     private void changePanel(JFrame frame, Keyboard keyboard) {

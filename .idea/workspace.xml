@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b19de74-0600-4516-897e-3fec290aec1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Objects/Path.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Objects/SnakePart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Keyboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EndGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/EndGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GamingPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snaky/Records" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snaky/UI/EndGame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snaky/UI/EndGame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snaky/UI/EndGame$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snaky/UI/EndGame$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snaky/UI/EndGame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snaky/UI/EndGame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snaky/UI/EndGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snaky/UI/EndGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snaky/UI/GamingPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snaky/UI/GamingPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snaky/UI/startGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snaky/UI/startGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snaky/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snaky/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GlobalConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GlobalConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/startGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/startGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Records" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/EndGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/EndGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/GamingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GamingPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/startGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/startGame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/startGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+            <state relative-caret-position="453">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,20 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/GamingPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="125" column="36" lean-forward="true" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/UI/EndGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+            <state relative-caret-position="375">
+              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,10 +64,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/EndGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-23">
+              <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GlobalConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="360">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,13 +119,14 @@
         <option value="$PROJECT_DIR$/src/GamingPanel.java" />
         <option value="$PROJECT_DIR$/src/EndGame.java" />
         <option value="$PROJECT_DIR$/src/Objects/Path.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Objects/SnakePart.java" />
         <option value="$PROJECT_DIR$/src/UI/Keyboard.java" />
-        <option value="$PROJECT_DIR$/src/GlobalConstants.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/UI/startGame.java" />
         <option value="$PROJECT_DIR$/src/UI/GamingPanel.java" />
         <option value="$PROJECT_DIR$/src/UI/EndGame.java" />
-        <option value="$PROJECT_DIR$/src/UI/startGame.java" />
+        <option value="$PROJECT_DIR$/src/Record.java" />
+        <option value="$PROJECT_DIR$/src/GlobalConstants.java" />
       </list>
     </option>
   </component>
@@ -181,8 +187,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548542880467" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548545983062" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Objects" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -236,7 +247,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1502146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1502146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -244,8 +255,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23734939" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23734939" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -268,9 +279,6 @@
     <entry file="file://$PROJECT_DIR$/src/Пф.java" />
     <entry file="file://$PROJECT_DIR$/src/snaky.java" />
     <entry file="file://$PROJECT_DIR$/src/apple.java" />
-    <entry file="file://$PROJECT_DIR$/src/Records">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -325,35 +333,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GlobalConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/startGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/GamingPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="125" column="36" lean-forward="true" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -362,8 +343,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/EndGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        <state relative-caret-position="-23">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/GamingPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/startGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Records">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GlobalConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

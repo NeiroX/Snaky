@@ -29,7 +29,8 @@ public class GamingPanel extends JPanel {
             JOptionPane.showMessageDialog(null, "Something is wrong. Ask developer about problem");
         }
     }
-
+    private static JLabel labelRecord = new JLabel();
+    private static JLabel labelScore = new JLabel();
     private Rectangle applePosition;
     private int xs = GlobalConstants.SCREEN_W / 2;
     private int ys = GlobalConstants.SCREEN_H / 2;
@@ -51,16 +52,16 @@ public class GamingPanel extends JPanel {
         setFocusable(true);
         setLayout(null);
 
-        JLabel labelRecord = new JLabel();
         labelRecord.setBounds(50, GlobalConstants.SCREEN_H - 50, 100, 100);
         labelRecord.setText("Record: " + GlobalConstants.recordMax);
         labelRecord.setForeground(Color.GRAY);
-        JLabel labelScore = new JLabel();
+
         labelScore.setBounds(GlobalConstants.SCREEN_W - 110, GlobalConstants.SCREEN_H - 50, 100, 100);
         labelScore.setText("Score: " + GlobalConstants.recordNow);
         labelScore.setForeground(Color.PINK);
-        add(labelRecord);
-        add(labelScore);
+
+        this.add(labelRecord);
+        this.add(labelScore);
 
         appleSetCoords();
         timer.start();
