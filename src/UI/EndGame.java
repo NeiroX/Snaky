@@ -1,11 +1,12 @@
-import javax.imageio.ImageIO;
+package UI;
+
 import javax.swing.*;
+
+import Snaky.GlobalConstants;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -16,35 +17,28 @@ public class EndGame extends JPanel {
     private static JLabel scoreLabel = new JLabel();
     private static JLabel recordLabel = new JLabel();
     private static Timer time = new Timer();
-    private static BufferedImage image;
 
-    static {
-        try {
-            image = ImageIO.read(new File("images//endGame.jpg"));
-        } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "Something is wrong. Ask developer about problem");
-        }
-    }
-
-    public EndGame(JFrame frame) {
+    public EndGame(JFrame frame, Keyboard keyboard) {
         setSize(GlobalConstants.SCREEN_W, GlobalConstants.SCREEN_H);
         setBackground(Color.BLACK);
         setLayout(null);
         add(endButton);
         add(restartButton);
-        scoreLabel.setBounds(800, 800, 100, 100);
+        scoreLabel.setBounds(GlobalConstants.SCREEN_W / 2 - 100, GlobalConstants.SCREEN_H - 110, 100, 100);
         scoreLabel.setText(Integer.toString(GlobalConstants.recordNow));
-        recordLabel.setBounds(100, 100, 100, 100);
+        recordLabel.setBounds(200, 100, 100, 100);
         if (GlobalConstants.recordNow <= GlobalConstants.recordMax) {
             recordLabel.setText(Integer.toString(GlobalConstants.recordMax));
         } else {
             recordLabel.setText(Integer.toString(GlobalConstants.recordNow));
             GlobalConstants.recordMax = GlobalConstants.recordNow;
         }
-        endButton.setBounds(450, 100, 100, 100);
+        add(recordLabel);
+        add(scoreLabel);
+        endButton.setBounds(GlobalConstants.SCREEN_W / 2 - 100, 100, 100, 100);
         endButton.setText("Exit");
         restartButton.setText("Restart");
-        restartButton.setBounds(450, 800, 100, 100);
+        restartButton.setBounds(300, 500, 100, 100);
         endButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -57,7 +51,7 @@ public class EndGame extends JPanel {
                 time.schedule(new TimerTask() {
                     @Override
                     public void run() {
-                        changePanel(frame);
+                        changePanel(frame, keyboard);
                     }
                 }, 2000);
             }
@@ -68,11 +62,14 @@ public class EndGame extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(image, 300, 300, this);
+        g.setColor(Color.white);
+        g.setFont(new Font("TimesRoman", Font.BOLD, 100));
+        g.drawString("Game over", 0, 300);
     }
-    private void changePanel(JFrame frame) {
+
+    private void changePanel(JFrame frame, Keyboard keyboard) {
         frame.getContentPane().removeAll();
-        frame.add(new GamingPanel(frame));
+        frame.add(new GamingPanel(frame, keyboard));
         frame.invalidate();
         GlobalConstants.recordNow = 0;
         frame.repaint();

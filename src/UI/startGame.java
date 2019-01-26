@@ -1,8 +1,11 @@
-
+package UI;
 
 import java.awt.*;
 import javax.imageio.*;
 import javax.swing.*;
+
+import Snaky.GlobalConstants;
+
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.TimerTask;
@@ -22,20 +25,20 @@ public class startGame extends JPanel {
         }
     }
 
-    public startGame(JFrame frame) {
+    public startGame(JFrame frame, Keyboard keyboard) {
         setSize(GlobalConstants.SCREEN_W, GlobalConstants.SCREEN_H);
         setBackground(Color.BLACK);
         setLayout(null);
         JLabel label = new JLabel();
         label.setText("Use these button for controle the snake");
-        label.setBounds(150, 150, 1000, 200);
-        label.setFont(new Font("TimesRoman", Font.ITALIC, 50));
+        label.setBounds(150, 150, GlobalConstants.SCREEN_W / 2, GlobalConstants.SCREEN_H / 2);
+        label.setFont(new Font("TimesRoman", Font.ITALIC, 20));
         label.setForeground(Color.WHITE);
         add(label);
         time.schedule(new TimerTask() {
             @Override
             public void run() {
-                changePanel(frame);
+                changePanel(frame, keyboard);
             }
         }, 5000);
     }
@@ -44,11 +47,12 @@ public class startGame extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(image, 300, 300, this);
+        g.drawImage(image, 150, 300, this);
     }
-    public void changePanel(JFrame frame){
+
+    public void changePanel(JFrame frame, Keyboard keyboard) {
         frame.getContentPane().removeAll();
-        frame.add(new GamingPanel(frame));
+        frame.add(new GamingPanel(frame, keyboard));
         frame.invalidate();
         frame.repaint();
     }
