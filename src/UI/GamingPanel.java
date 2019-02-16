@@ -29,11 +29,10 @@ public class GamingPanel extends JPanel {
             JOptionPane.showMessageDialog(null, "Something is wrong. Ask developer about problem");
         }
     }
+
     private static JLabel labelRecord = new JLabel();
     private static JLabel labelScore = new JLabel();
     private Rectangle applePosition;
-    private int xs = GlobalConstants.SCREEN_W / 2;
-    private int ys = GlobalConstants.SCREEN_H / 2;
     private final LinkedList<SnakePart> snakeBodies = new LinkedList<>();
     private final Map<Integer, Path> pathsMap = new HashMap<>();
     private Direction direction = Direction.LEFT;

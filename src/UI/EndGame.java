@@ -7,8 +7,14 @@ import Snaky.GlobalConstants;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import static Snaky.GlobalConstants.fl;
 
 public class EndGame extends JPanel {
 
@@ -23,6 +29,12 @@ public class EndGame extends JPanel {
         setBackground(Color.BLACK);
         setLayout(null);
 
+        try {
+            getRecord();
+        } catch (Exception e) {
+            System.out.println("Something went wrong in getRecord");
+        }
+
         add(endButton);
         add(restartButton);
 
@@ -33,11 +45,14 @@ public class EndGame extends JPanel {
         recordLabel.setForeground(Color.WHITE);
         recordLabel.setBounds(500, GlobalConstants.SCREEN_H - 110, 100, 100);
         if (GlobalConstants.recordNow <= GlobalConstants.recordMax) {
-            recordLabel.setText("RECORD: " + GlobalConstants.recordMax);
-        } else {
-            recordLabel.setText(Integer.toString(GlobalConstants.recordNow));
             GlobalConstants.recordMax = GlobalConstants.recordNow;
+            try {
+                setRecord();
+            } catch (Exception e) {
+                System.out.println("Something went wrong in setRecord");
+            }
         }
+        recordLabel.setText("RECORD: " + GlobalConstants.recordMax);
         add(recordLabel);
         add(scoreLabel);
 
@@ -81,6 +96,28 @@ public class EndGame extends JPanel {
         frame.invalidate();
         GlobalConstants.recordNow = 0;
         frame.repaint();
+    }
+
+    private void getRecord() throws Exception {
+
+        Scanner scan = new Scanner(fl);
+        String line = scan.nextLine().trim();
+        GlobalConstants.recordMax = Integer.parseInt(line);
+        scan.close();
+
+    }
+
+    private void setRecord() throws Exception {
+        FileWriter fw = new FileWriter(fl);
+        BufferedWriter bw = new BufferedWriter(fw);
+        PrintWriter out = new PrintWriter(bw);
+
+        out.println(GlobalConstants.recordMax);
+        out.flush();
+
+        out.close();
+        bw.close();
+        fw.close();
     }
 
 }
